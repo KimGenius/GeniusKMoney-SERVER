@@ -7,3 +7,5 @@
 - 기본 작업 셋팅
 - CORS 작업 (나중에 수정될지도)
 - /api/test & http 파일 작업 (Hello World!)
+- Database Class 작업 & 적용
+- get_customer(GET /api/customer) 작업 완료
