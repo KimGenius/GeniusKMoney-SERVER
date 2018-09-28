@@ -1,12 +1,22 @@
 from flask import Flask
 from flask_cors import CORS
+from flask import jsonify
+from flask import request
+import Database
+
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "*"}})
 
+db = lambda: Database.GeniusKMoney()
 
-@app.route('/api/test')
-def hello_world():
-    return 'Hello World!'
+
+@app.route('/api/customer', methods=['GET', 'POST'])
+def customers():
+    if request.method == 'GET':
+        res = db().list_customers()
+        return jsonify(res)
+    elif request.method == 'POST':
+        return 'Create Customer!\n'
 
 
 if __name__ == '__main__':
