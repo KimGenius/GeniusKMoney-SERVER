@@ -4,7 +4,24 @@
 # * 'gtrp' and 'gtr' create a GET request with or without query parameters;
 # * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
 # * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
-GET http://localhost:5000/api/test
+GET http://localhost:5000/api/customers
 
 ###
-Hello World!
+[
+{
+    "date_created": "Wed, 26 Sep 2018 20:03:23 GMT",
+    "date_updated": "Wed, 26 Sep 2018 20:04:11 GMT",
+    "idx": 1,
+    "name": "테스트 1",
+    "total_money": 600000,
+    "total_payback_money": 200000
+},
+{
+    "date_created": "Wed, 26 Sep 2018 20:03:23 GMT",
+    "date_updated": "Wed, 26 Sep 2018 20:04:11 GMT",
+    "idx": 2,
+    "name": "테스트 2",
+    "total_money": 900000,
+    "total_payback_money": 100000
+}
+]

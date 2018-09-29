@@ -10,7 +10,7 @@ CORS(app, resources={r"/api/*": {"origins": "*"}})
 db = lambda: Database.GeniusKMoney()
 
 
-@app.route('/api/customer', methods=['GET', 'POST'])
+@app.route('/api/customers', methods=['GET', 'POST'])
 def customers():
     if request.method == 'GET':
         res = db().list_customers()
