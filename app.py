@@ -19,5 +19,14 @@ def customers():
         return 'Create Customer!\n'
 
 
+@app.route('/api/histories', methods=['GET', 'POST'])
+def histories():
+    if request.method == 'GET':
+        res = db().list_money_histories()
+        return jsonify(res)
+    elif request.method == 'POST':
+        return 'Create History!\n'
+
+
 if __name__ == '__main__':
     app.run()
