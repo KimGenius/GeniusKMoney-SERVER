@@ -13,3 +13,7 @@
 ### 2018-09-29
 - route 경로 수정
 - reference 수정
+
+### 2018-09-30
+- get_histories(GET /api/histories) 작업 완료
+- reference 수정
