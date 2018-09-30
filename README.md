@@ -9,3 +9,7 @@
 - /api/test & http 파일 작업 (Hello World!)
 - Database Class 작업 & 적용
 - get_customer(GET /api/customer) 작업 완료
+
+### 2018-09-29
+- route 경로 수정
+- reference 수정
