@@ -17,3 +17,9 @@ class GeniusKMoney:
         result = self.cur.fetchall()
 
         return result
+
+    def list_money_histories(self):
+        self.cur.execute("SELECT * FROM money_histories")
+        result = self.cur.fetchall()
+
+        return result
