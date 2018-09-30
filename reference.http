@@ -25,3 +25,18 @@ GET http://localhost:5000/api/customers
     "total_payback_money": 100000
 }
 ]
+
+###
+GET http://localhost:5000/api/histories
+
+###
+[
+{
+    "date_created": "Wed, 26 Sep 2018 20:07:37 GMT",
+    "idx": 1,
+    "memo": null,
+    "money": 100000,
+    "type": 1, // 0(false) -> 대출, 1(true) -> 상환
+    "udx": 2
+}
+]
