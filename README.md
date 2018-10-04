@@ -17,3 +17,6 @@
 ### 2018-09-30
 - get_histories(GET /api/histories) 작업 완료
 - reference 수정
+
+### 2018-10-04
+- list_money_histories front chart 때문에 date_created ASC 정렬 추가
