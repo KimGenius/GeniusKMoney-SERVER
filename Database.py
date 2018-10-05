@@ -19,7 +19,7 @@ class GeniusKMoney:
         return result
 
     def list_money_histories(self):
-        self.cur.execute("SELECT * FROM money_histories ORDER BY date_created ASC")
+        self.cur.execute("SELECT h.idx, c.name, h.type, h.money, h.memo, h.date_created FROM money_histories as h INNER JOIN customers c on h.udx = c.idx ORDER BY h.date_created DESC;")
         result = self.cur.fetchall()
 
         return result
