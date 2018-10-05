@@ -20,3 +20,6 @@
 
 ### 2018-10-04
 - list_money_histories front chart 때문에 date_created ASC 정렬 추가
+
+### 2018-10-05
+- list_money_histories INNER JOIN
