@@ -23,3 +23,6 @@
 
 ### 2018-10-05
 - list_money_histories INNER JOIN
+
+### 2018-10-08
+- add_customer API 추가
