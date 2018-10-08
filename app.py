@@ -16,7 +16,9 @@ def customers():
         res = db().list_customers()
         return jsonify(res)
     elif request.method == 'POST':
-        return 'Create Customer!\n'
+        data = request.get_json()
+        res = db().add_customer(name=data['name'])
+        return jsonify(res)
 
 
 @app.route('/api/histories', methods=['GET', 'POST'])
